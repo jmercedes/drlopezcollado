@@ -4,7 +4,7 @@ class CreateLeads < ActiveRecord::Migration
       
       #Pacient information
       t.string :first_name
-      t.sring :last_name
+      t.string :last_name
       t.string :email
       t.string :phone
       t.string :mobile
