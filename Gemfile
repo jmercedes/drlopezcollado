@@ -51,3 +51,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'psych'
 gem 'country_select'
+
+gem 'fog'
+gem 'carrierwave'
+gem 'rmagick'
