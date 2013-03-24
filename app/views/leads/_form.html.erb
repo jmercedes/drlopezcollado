@@ -1,14 +1,25 @@
 <%= simple_form_for(@lead) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
     <%= f.input :first_name %>
     <%= f.input :last_name %>
+		<%= f.input :language %>
     <%= f.input :email %>
     <%= f.input :phone %>
-  </div>
+		<%= f.input :mobile %>
+		<%= f.input :twitter %>
+		<%= f.input :skype %>
+		
+		<%= f.input :address %>
+		<%= f.input :address2 %>
+		<%= f.input :address3 %>
+		<%= f.input :city %>
+		<%= f.input :state %>
+		<%#= f.input :country %>
+		<%= f.input :zipcode %>
+		
+		<%= f.input :comments %>
 
-  <div class="form-actions">
     <%= f.button :submit %>
-  </div>
+
 <% end %>
