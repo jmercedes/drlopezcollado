@@ -5,7 +5,12 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
+group :development, :test do
+  gem 'sqlite3', '~> 1.3.7'
+  gem "better_errors"
+  gem "binding_of_caller"
+end
 
 group :production do
   gem 'pg'
