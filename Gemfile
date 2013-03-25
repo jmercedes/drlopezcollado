@@ -54,4 +54,6 @@ gem 'country_select'
 
 gem 'fog'
 gem 'carrierwave'
+gem 'carrierwave_direct'
+gem 'sidekiq'
 gem 'rmagick'

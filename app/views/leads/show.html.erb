@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>image</b>
+  <%= image_tag @lead.image_url(:thumb).to_s %>
+</p>
+
+
+<p>
   <b>First name:</b>
   <%= @lead.first_name %>
 </p>

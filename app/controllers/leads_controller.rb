@@ -3,6 +3,8 @@ class LeadsController < ApplicationController
   # GET /leads.json
   def index
     @leads = Lead.all
+    @uploader = Lead.new.image
+    @uploader = success_action_redirect = new_leading_url
 
     respond_to do |format|
       format.html # index.html.erb
