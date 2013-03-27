@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130324230350) do
+ActiveRecord::Schema.define(:version => 20130327183712) do
 
   create_table "leads", :force => true do |t|
     t.string   "first_name"
@@ -31,9 +31,20 @@ ActiveRecord::Schema.define(:version => 20130324230350) do
     t.string   "state"
     t.string   "country"
     t.string   "zipcode"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
     t.string   "image"
+    t.string   "height"
+    t.string   "weight"
+    t.string   "refered_by"
+    t.string   "how_did_you_knew_about_us"
+    t.boolean  "smoke"
+    t.string   "prior_procedures"
+    t.string   "current_medication"
+    t.string   "diagnosed_diseases"
+    t.boolean  "require_transportation"
+    t.boolean  "require_recuperation_home"
+    t.date     "estimated_date_for_surgery"
   end
 
 end

@@ -2,6 +2,7 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+		<!-- Personal information -->
     <%= f.input :first_name %>
     <%= f.input :last_name %>
 		<%= f.input :language %>
@@ -10,10 +11,8 @@
 		<%= f.input :mobile %>
 		<%= f.input :twitter %>
 		<%= f.input :skype %>
-	  
-	  <!-- image upload  -->
-		 <%= f.input :image %>
-		
+
+		<!-- Location information -->
 		<%= f.input :address %>
 		<%= f.input :address2 %>
 		<%= f.input :address3 %>
@@ -21,7 +20,22 @@
 		<%= f.input :state %>
 		<%= f.input :country %>
 		<%= f.input :zipcode %>
-		
+	  
+	  
+	  <!-- Physique information -->
+		<%= f.input :image %>
+		<%= f.input :height %>
+		<%= f.input :weight %>		
+		<%= f.input :smoke %>
+		<%= f.input :prior_procedures %>
+	  <%= f.input :current_medication %> 
+		<%= f.input :diagnosed_diseases %>
+	  <%= f.input :require_recuperation_home %>
+		<%= f.input :estimated_date_for_surgery %>	 
+
+		<%= f.input :require_transportation %>
+		<%= f.input :refered_by %>
+		<%= f.input :how_did_you_knew_about_us %>
 		<%= f.input :comments %>
   </div>
 
