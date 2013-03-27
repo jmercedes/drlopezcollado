@@ -28,9 +28,11 @@
 		<%= f.input :weight %>		
 		<%= f.input :smoke %>
 		
+		<h3>Procedure you are interested in</h3>
 		<%= f.simple_fields_for :procedures do |builder| %>
 			<fieldset>
-				<%= builder.input :name %>
+				 <%= builder.collection_check_boxes :procedure_ids, Procedure.all, :id, :name %>
+				<%#= builder.input :name %>
 			</fieldset>	
 		<% end %>
 		
