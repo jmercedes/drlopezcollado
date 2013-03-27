@@ -1,5 +1,8 @@
 Drlopezcollado::Application.routes.draw do
   
+  resources :procedures
+
+
   root :to => 'leads#new'
   
   resources :leads
