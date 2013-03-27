@@ -27,6 +27,13 @@
 		<%= f.input :height %>
 		<%= f.input :weight %>		
 		<%= f.input :smoke %>
+		
+		<%= f.simple_fields_for :procedures do |builder| %>
+			<fieldset>
+				<%= builder.input :name %>
+			</fieldset>	
+		<% end %>
+		
 		<%= f.input :prior_procedures %>
 	  <%= f.input :current_medication %> 
 		<%= f.input :diagnosed_diseases %>
