@@ -62,6 +62,9 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     facter (1.6.18)
+    figaro (0.6.3)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     fog (1.9.0)
       builder
       excon (~> 0.14)
@@ -183,6 +186,7 @@ DEPENDENCIES
   carrierwave_direct
   coffee-rails (~> 3.2.1)
   country_select
+  figaro
   fog
   jquery-rails
   less-rails

@@ -27,8 +27,10 @@
 <br />
 
 <%= direct_upload_form_for @uploader do |f| %>
-	<%= f.file_field :image %>
-	<%= f.submit "upload image" %>
+  <p><%= f.file_field :image %></p>
+  <p><%= f.submit "Upload Image" %></p>
 <% end %>
+
+
 
 <%= link_to 'New Lead', new_lead_path %>

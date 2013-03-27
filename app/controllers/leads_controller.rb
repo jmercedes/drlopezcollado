@@ -4,7 +4,7 @@ class LeadsController < ApplicationController
   def index
     @leads = Lead.all
     @uploader = Lead.new.image
-    @uploader = success_action_redirect = new_leading_url
+    @uploader = success_action_redirect = new_lead_url
 
     respond_to do |format|
       format.html # index.html.erb
