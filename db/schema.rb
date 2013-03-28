@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130327192858) do
+ActiveRecord::Schema.define(:version => 20130328193432) do
 
   create_table "leads", :force => true do |t|
     t.string   "first_name"
@@ -45,6 +45,10 @@ ActiveRecord::Schema.define(:version => 20130327192858) do
     t.boolean  "require_transportation"
     t.boolean  "require_recuperation_home"
     t.date     "estimated_date_for_surgery"
+    t.string   "other_procedure"
+    t.string   "image2"
+    t.string   "image3"
+    t.string   "image4"
   end
 
   create_table "procedures", :force => true do |t|
