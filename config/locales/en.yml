@@ -2,11 +2,21 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  activerecord:
+      errors:
+          models:
+              lead:
+                  attributes:
+                      email:
+                          invalid_email: "E-mail format incorrect"
   helpers:
       submit:
           lead:
               create: Submit request
   simple_form:
+      notice:
+          lead:
+              show: "Your request has been successfully submitted."
       labels:
           lead:
               first_name: "First Name:"

@@ -1,5 +1,6 @@
 class Lead < ActiveRecord::Base
-  attr_accessible :image, :procedures_attributes,
+  attr_accessible :image,
+                  :procedures_attributes,
                   :first_name,
                   :last_name,
                   :email,
@@ -24,8 +25,13 @@ class Lead < ActiveRecord::Base
                   :diagnosed_diseases,
                   :estimated_date_for_surgery,
                   :how_did_you_knew_about_us,
-                  :refered_by
-                          
+                  :refered_by,
+                  :image2,
+                  :image3,
+                  :image4,
+                  :smoke,
+                  :require_recuperation_home,
+                  :require_transportation        
   
   mount_uploader :image, ImageUploader
   
@@ -46,9 +52,9 @@ class Lead < ActiveRecord::Base
             :zipcode,
             :presence => true
    
-   validates :twitter,
-             :format => { :with => /@([A-Za-z0-9_]{1,15})/,
-             :message => "The Twitter id is incorrect" }
+   #validates :twitter,
+   #          :format => { :with => /@([A-Za-z0-9_]{1,15})/,
+   #          :message => "The Twitter id is incorrect" }
    
    validates :email,
              :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i,

@@ -1,31 +1,13 @@
 <p id="notice"><%= notice %></p>
+<h2>Thank You <%= @lead.first_name %></h2>
+<h3>We will be in contact with you as soon as possible</h3>
 
-<p>
-  <b>image</b>
-  <%= image_tag @lead.image_url(:thumb).to_s %>
-</p>
-
-
-<p>
-  <b>First name:</b>
-  <%= @lead.first_name %>
-</p>
-
-<p>
-  <b>Last name:</b>
-  <%= @lead.last_name %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @lead.email %>
-</p>
-
-<p>
-  <b>Phone:</b>
-  <%= @lead.phone %>
-</p>
+  <%#= image_tag @lead.image_url(:thumb).to_s %>
+  <%#= @lead.first_name %>
+  <%#= @lead.last_name %>
+  <%#= @lead.email %>
+  <%#= @lead.phone %>
 
 
-<%= link_to 'Edit', edit_lead_path(@lead) %> |
-<%= link_to 'Back', leads_path %>
+<%#= link_to 'Edit', edit_lead_path(@lead) %> |
+<%#= link_to 'Return to form', leads_path %>
