@@ -2,6 +2,10 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  helpers:
+      submit:
+          lead:
+              create: Submit request
   simple_form:
       labels:
           lead:
@@ -32,3 +36,4 @@ en:
               require_transportation: "Do you require transportation?"
               require_recuperation_home: "Do you require Recuperation Home?"
               estimated_date_for_surgery: "Estimated time for your surgery:"
+              submit: "Submit form" 

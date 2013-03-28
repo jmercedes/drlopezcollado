@@ -146,19 +146,19 @@
 		
 		<div class="row-fluid">
 			<div class="span5">
-				<%= f.input :prior_procedures %>			
+				<%= f.input :prior_procedures, :input_html => {:style => 'width: 100%'} %>			
 			</div>		
 		</div>
 
 		<div class="row-fluid">
 			<div class="span5">
-		  	<%= f.input :current_medication %> 							
+		  	<%= f.input :current_medication, :input_html => {:style => 'width: 100%'} %> 							
 			</div>			
 		</div>
 
 		<div class="row-fluid">
 			<div class="span5">
-			<%= f.input :diagnosed_diseases %>							
+			<%= f.input :diagnosed_diseases, :input_html => {:style => 'width: 100%'} %>							
 			</div>		
 		</div>
 		
@@ -168,10 +168,11 @@
 			<%= f.collection_radio_buttons :require_recuperation_home, [[true, 'Yes'] ,[false, 'No']], :first, :last %>				
 		</div> 			
  		</div>
-
+    <hr>
 		<%= f.input :estimated_date_for_surgery %>	 
     <hr>
 		<h3>Additional information</h3>
+		
 		
 		<div class="row-fluid">
 			<div class="span5">
@@ -182,7 +183,9 @@
     
 		<div class="row-fluid">
 			<div class="span5">
-				<%= f.input :how_did_you_knew_about_us %>								
+				<%#= f.input :how_did_you_knew_about_us %>
+				<%= f.input :how_did_you_knew_about_us, collection: [ "Google", "Advertising", "A friend", "One of our patients"] %>
+												
 			</div>
 			
 		</div>
@@ -194,7 +197,7 @@
 	   
 			<div class="row-fluid">
 				<div class="span5">
-					<%= f.input :comments %>
+					<%= f.input :comments, :input_html => {:style => 'width: 100%'} %>
 				</div>
 			</div>
 	
