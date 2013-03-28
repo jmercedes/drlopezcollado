@@ -2,4 +2,33 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  simple_form:
+      labels:
+          lead:
+              first_name: "First Name:"
+              last_name: "Last Name:"
+              email: "E-mail:"
+              phone: "Telephone:"
+              mobile: "Mobile:"
+              twitter: "Twitter ID:"
+              skype: "Skype ID:"
+              language: "Language:"
+              comments: "Comments:"
+              address: "Address:"
+              address2: "Address 2:"
+              address3: "Address 3:"
+              city: "City:"
+              country: "Country:"
+              zipcode: "Zip Code:"
+              image: "Upload your images"
+              height: "Your height:"
+              weight: "Your weight:"
+              refered_by: "If you were refered by someone please specify"
+              how_did_you_knew_about_us: "How did you knew about us?"
+              smoke: "Do you smoke?"
+              prior_procedures: "If you have had surgical procedures please specify:"
+              current_medication: "If you are taking any medication or treatment please specify:"
+              diagnosed_diseases: "Please specify any diagnosed diseases:"
+              require_transportation: "Do you require transportation?"
+              require_recuperation_home: "Do you require Recuperation Home?"
+              estimated_date_for_surgery: "Estimated time for your surgery:"

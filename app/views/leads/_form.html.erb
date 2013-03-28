@@ -129,6 +129,7 @@
 
     <div class="row-fluid">
 		<div class="span5">
+			<label>Do you smoke?</label>
 			<%#= f.input :smoke %>
 			 <%= f.collection_radio_buttons :smoke, [[true, 'Yes'] ,[false, 'No']], :first, :last %>			
 		</div>    	
@@ -142,24 +143,30 @@
 				<%#= builder.input :name %>
 			</fieldset>	
 		<% end %>
- 		<div class="row-fluid">
-		<div class="span3">
-			<%= f.input :prior_procedures %>			
+		
+		<div class="row-fluid">
+			<div class="span5">
+				<%= f.input :prior_procedures %>			
+			</div>		
 		</div>
-		<div class="span2">
-	  	<%= f.input :current_medication %> 			
-		</div>
- 			
- 		</div>
 
+		<div class="row-fluid">
+			<div class="span5">
+		  	<%= f.input :current_medication %> 							
+			</div>			
+		</div>
+
+		<div class="row-fluid">
+			<div class="span5">
+			<%= f.input :diagnosed_diseases %>							
+			</div>		
+		</div>
+		
  		<div class="row-fluid">
-		<div class="span3">
-			<%= f.input :diagnosed_diseases %>			
-		</div>
-		<div class="span2">
-			<%= f.input :require_recuperation_home %>	
-		</div>
- 			
+		<div class="span5">
+			<label>Do you require Recuperation Home?</label>
+			<%= f.collection_radio_buttons :require_recuperation_home, [[true, 'Yes'] ,[false, 'No']], :first, :last %>				
+		</div> 			
  		</div>
 
 		<%= f.input :estimated_date_for_surgery %>	 
@@ -167,23 +174,30 @@
 		<h3>Additional information</h3>
 		
 		<div class="row-fluid">
-			<div class="span3">
-				<%= f.input :require_transportation %>				
-			</div>
-			<div class="span2">
-				<%= f.input :refered_by %>				
+			<div class="span5">
+				<label>Do you require transportation</label>
+				<%= f.collection_radio_buttons :require_transportation, [[true, 'Yes'] ,[false, 'No']], :first, :last %>					
+			</div>			
+		</div>
+    
+		<div class="row-fluid">
+			<div class="span5">
+				<%= f.input :how_did_you_knew_about_us %>								
 			</div>
 			
 		</div>
-
 		<div class="row-fluid">
-			<div class="span3">
-				<%= f.input :how_did_you_knew_about_us %>				
+			<div class="span5">
+				<%= f.input :refered_by %>				
 			</div>			
 		</div>
-		
-
-		<%= f.input :comments %>
+	   
+			<div class="row-fluid">
+				<div class="span5">
+					<%= f.input :comments %>
+				</div>
+			</div>
+	
   </div>
 
   <div class="form-actions">
