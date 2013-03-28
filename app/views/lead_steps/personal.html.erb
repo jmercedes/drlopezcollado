@@ -1,0 +1,30 @@
+Personal
+
+<%= simple_form_for(@user), :url => wizard_path, do |f| %>
+
+<% end %>
+	
+<!-- Physique information -->
+<%= f.input :image %>
+<%= f.input :height %>
+<%= f.input :weight %>		
+<%= f.input :smoke %>
+
+<h3>Procedure you are interested in</h3>
+<%= f.simple_fields_for :procedures do |builder| %>
+	<fieldset>
+		 <%= builder.collection_check_boxes :procedure_ids, Procedure.all, :id, :name %>
+		<%#= builder.input :name %>
+	</fieldset>	
+<% end %>
+
+<%= f.input :prior_procedures %>
+<%= f.input :current_medication %> 
+<%= f.input :diagnosed_diseases %>
+<%= f.input :require_recuperation_home %>
+<%= f.input :estimated_date_for_surgery %>
+
+<% end %>
+<% end %>
+
+	 

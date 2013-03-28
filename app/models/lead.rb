@@ -1,5 +1,5 @@
 class Lead < ActiveRecord::Base
-  attr_accessible :image,
+  attr_accessible :image, :procedures_attributes,
                   :first_name,
                   :last_name,
                   :email,
@@ -22,4 +22,6 @@ class Lead < ActiveRecord::Base
   mount_uploader :image, ImageUploader
   
   has_many :procedures
+  accepts_nested_attributes_for :procedures
+  
 end
