@@ -60,5 +60,6 @@ gem 'sidekiq'
 gem 'rmagick'
 gem 'figaro'
 gem 'wicked'
+gem 'zohax'
 
 

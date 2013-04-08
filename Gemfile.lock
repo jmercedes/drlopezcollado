@@ -77,6 +77,9 @@ GEM
       ruby-hmac
     formatador (0.2.4)
     hike (1.2.1)
+    httparty (0.10.2)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.4)
     journey (1.0.4)
     jquery-fileupload-rails (0.4.0)
@@ -100,6 +103,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.21)
     multi_json (1.7.2)
+    multi_xml (0.5.3)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-ssh (2.6.5)
@@ -181,6 +185,11 @@ GEM
     wicked (0.5.0)
       activesupport (>= 3.0.7)
       rails (>= 3.0.7)
+    xml-simple (1.1.2)
+    zohax (0.0.3)
+      httparty
+      json
+      xml-simple
 
 PLATFORMS
   ruby
@@ -209,3 +218,4 @@ DEPENDENCIES
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
   wicked
+  zohax
