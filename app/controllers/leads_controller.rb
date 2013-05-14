@@ -16,7 +16,7 @@ class LeadsController < ApplicationController
   # GET /leads/1.json
   def show
     @lead = Lead.find(params[:id])
-
+               
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @lead }
@@ -27,8 +27,7 @@ class LeadsController < ApplicationController
   # GET /leads/new.json
   def new
     @lead = Lead.new
-
-    respond_to do |format|
+     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @lead }
     end
@@ -43,7 +42,8 @@ class LeadsController < ApplicationController
   # POST /leads.json
   def create
     @lead = Lead.new(params[:lead])
-
+    
+    zoho= Lead.crm(@lead) 
     respond_to do |format|
       if @lead.save
         format.html { redirect_to @lead, notice: 'Lead was successfully created.' }
