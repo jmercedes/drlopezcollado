@@ -62,6 +62,9 @@ class Lead < ActiveRecord::Base
 
    validates :phone, :mobile, :numericality => true
   
-  
+  def self.crm(zoho)
+   RubyZoho::Crm::Lead.new(:last_name=>zoho.last_name,:phone=>zoho.phone,:email=>zoho.email,:mobile=>zoho.mobile,:state=>zoho.state,:zip_code=>zoho.zipcode,:country=>zoho.country,:recovery=>zoho.require_recuperation_home,:transporte =>zoho.require_transportation).save
+    
+  end
   
 end
